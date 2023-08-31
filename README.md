@@ -88,7 +88,7 @@ Algorithm-wise CV/LB trends have been shown in the below image:
 
 ## What could have worked
 1. We did not spend a lot of time filtering the dataset. The dataset could have been filtered based on the weightage of classes to remove bias concentrated towards one particular class. 
-2. It was too late for us in the competition to incorporate pseudo-labeling,, but it certainly worked for many competitors. 
+2. It was too late for us in the competition to incorporate pseudo-labeling, but it certainly worked for many competitors. 
 3. Training more data-intensive versions of models like XLarge could have worked. With the constrained resources, it could not be implemented.
 
 ## Code 
