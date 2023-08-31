@@ -17,6 +17,7 @@ The textual data for the competition was divided into 2 separate files, i.e., **
 * Rebuttal - a claim that refutes a counterclaim
 * Evidence - ideas or examples that support claims, counterclaims, or rebuttals.
 * Concluding Statement - a concluding statement that restates the claims 
+<img src="https://github.com/namantuli18/Feedback-Prize-Longformer-Ensemble/blob/main/imgs/dataset.png" width="600" height="300" />
 
 ### Resources to the dataset:  
 Aigner Picou, Alex Franklin, Maggie, Meg Benner, Perpetual Baffour, Phil Culliton, Ryan Holbrook, Scott Crossley, Terry_yutian, ulrichboser. (2021). Feedback Prize - Evaluating Student Writing. Kaggle. https://kaggle.com/competitions/feedback-prize-2021
@@ -73,8 +74,8 @@ The performance of our individual models, along with their weightage in our fina
 | 4. | Funnel Tranformer | Cross Entropy Loss | [funnel-transformer](https://huggingface.co/docs/transformers/model_doc/funnel)| 0.2
 | 5. | Deberta Large | Smooth Loss | [deberta-large](https://huggingface.co/microsoft/deberta-large)| 0.3
 
-Algorithm-wise CV/LB trends have been shown in the below image:
-
+Algorithm-wise CV/LB trends have been shown in the below image:  
+<img src="https://github.com/namantuli18/Feedback-Prize-Longformer-Ensemble/blob/main/imgs/cv-lb.png" width="500" height="300" />
 
 **Note** : We also trained other models, such as the Deberta XLarge-mnli or the Birdformer variations, but they were not included in our final submissions because of considerations pertinent to their longer training & inference time or overfitting the public leaderboard.
 
@@ -90,7 +91,9 @@ Algorithm-wise CV/LB trends have been shown in the below image:
 2. It was too late for us in the competition to incorporate pseudo-labeling,, but it certainly worked for many competitors. 
 3. Training more data-intensive versions of models like XLarge could have worked. With the constrained resources, it could not be implemented.
 
-
+## Code 
+For training code, you can refer file `scripts/train-longformer.ipynb`  
+For inference script, please refer [Kaggle Notebook](https://www.kaggle.com/code/namantuli/clean-feedback-ensemble-balanced) or file `scripts/clean-feedback-ensemble-balanced.ipynb`
 
 
 
