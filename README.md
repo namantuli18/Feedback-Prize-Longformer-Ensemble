@@ -3,7 +3,7 @@
 ## Results
 | Public Score | Private Score | Public Rank | Private Rank |
 |----------|----------|----------|----------|
-| 0.705 | 0.716 | 52/2000  | 70/2000
+| 0.705 | 0.716 | 70/2000  | 52/2000
 
 ## Problem Statement  
 The participants in this competition were asked to segment essays of students in 6th–12th grade in one of 15 categories, hoping to enhance the feedback process and help students improve their writing skills.
