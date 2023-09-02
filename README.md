@@ -84,12 +84,22 @@ Algorithm-wise CV/LB trends have been shown in the below image:
 1. Training a model over a single fold exhibited a reduced inference time but performed poorly as compared to models that were trained on a larger number of folds. 
 2. Text augmentation over training data was not effective for us and led to a reduced CV when tried with Longformer. We did not try this for other models, though. 
 3. Although it may have been slightly beneficial, the spell-checking did not significantly affect the performance of our models. 
-4. Use of models from open-source libraries such as SpaCy
+4. Use of models from open-source libraries such as SpaCy.
 
 ## What could have worked
 1. We did not spend a lot of time filtering the dataset. The dataset could have been filtered based on the weightage of classes to remove bias concentrated towards one particular class. 
 2. It was too late for us in the competition to incorporate pseudo-labeling, but it certainly worked for many competitors. 
 3. Training more data-intensive versions of models like XLarge could have worked. With the constrained resources, it could not be implemented.
+
+## Key Takeaways
+1. Longformers exceed the performance of usual algorithms in NER as the length of training texts keeps increasing.
+2. Ways of inducing variability in the inference algorithms are often helpful in order to amplify the cross-validation score of the blend. Some of these ways include:
+   - Using varied loss functions
+   - Training separate models on different datasets
+   - Use of varied model architectures from distinct families
+  
+3. Due to their extended training time, it is more sensible to train longformers fold-wise with a modest batch size.
+4. It is challenging to ensemble separate Longformer models within the constrained inference time.
 
 ## Code 
 For training code, you can refer file `scripts/train-longformer.ipynb`  
