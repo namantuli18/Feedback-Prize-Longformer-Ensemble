@@ -9,7 +9,7 @@
 The participants in this competition were asked to segment essays of students in 6th–12th grade in one of 15 categories, hoping to enhance the feedback process and help students improve their writing skills.
 
 ## Dataset
-The textual data for the competition was divided into 2 separate files, i.e., **train.zip** and **test.zip**, which consisted of the training and testing sets of documents, respectively. The **train.zip** file had roughly ~15K .txt files, with their respective annotations present in the **train.csv** file. SImilarly, the test set consisted of ~10K unseen documents, that were required to be segmented into various discourse elements such as:
+The textual data for the competition was divided into 2 separate files, i.e., **train.zip** and **test.zip**, which consisted of the training and testing sets of documents, respectively. The **train.zip** file had roughly ~15K .txt files, with their respective annotations present in the **train.csv** file. Similarly, the test set consisted of ~10K unseen documents, that were required to be segmented into various discourse elements such as:
 * Lead - an introduction that begins with a statistic, a quotation, a description, or some other device to grab the reader’s attention and point toward the thesis
 * Position - an opinion or conclusion on the main question
 * Claim - a claim that supports the position
